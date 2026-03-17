@@ -1,0 +1,36 @@
+🚀 Day 57 Machine Learning: (Deep Learning) — Understanding the Foundations of Deep Learning 🎯
+Today I started a new phase of my Deep Learning journey by studying the fundamental concepts of what Deep Learning is and how it differs from Machine Learning. Building a strong conceptual foundation is important before moving into advanced architectures and implementations.
+🧠 Key concepts I learned today:
+🔹 Deep Learning vs Machine Learning
+ Machine Learning algorithms focus more on statistical learning techniques, while Deep Learning models are built around neural networks that try to mimic how the human brain processes information.
+🔹 Deep Learning as a Subfield of Machine Learning
+ Deep Learning is a specialized area within Machine Learning focused on multi-layer neural networks that learn complex representations from large datasets.
+🔹 Core Components of Neural Networks
+ I studied the main building blocks used in deep learning models:
+• Neurons (Perceptrons)
+ • Weights and connections
+ • Network layers
+Input Layer
+ Hidden Layers
+ Output Layer
+🔹 Major Types of Deep Learning Models
+• Artificial Neural Networks (ANN)
+ • Convolutional Neural Networks (CNN)
+ • Recurrent Neural Networks (RNN)
+ • Generative Adversarial Networks (GANs) for generating text, images, and other content.
+🔹 Why Deep Learning Became Popular
+ Deep Learning gained attention due to high performance and wide applications in computer vision, natural language processing, speech recognition, and recommendation systems.
+🔹 Feature Engineering Difference
+ Traditional Machine Learning often requires manual feature engineering. Deep Learning models can automatically learn useful features directly from large datasets.
+🔹 Data and Hardware Requirements
+• Large datasets
+ • Powerful hardware like GPUs
+ • Longer training time than many ML models.
+🔹 Interpretability Challenge
+ A limitation is that deep learning models behave like black boxes, making their decisions harder to interpret. Because of this, Deep Learning complements Machine Learning rather than replacing it.
+🔹 Major Deep Learning Frameworks
+• TensorFlow (Google)
+ • PyTorch (Facebook)
+TensorFlow was initially harder to use, but with the introduction of Keras it became much easier to build and train models.
+✨ This session strengthened my understanding of the core principles of deep learning, which will help when moving toward advanced architectures and real-world projects.
+hashtag#Day57 hashtag#DeepLearning hashtag#MachineLearning hashtag#NeuralNetworks hashtag#TensorFlow hashtag#PyTorch hashtag#AI hashtag#DataScience hashtag#LearningJourney hashtag#ArtificialIntelligence
