@@ -1,0 +1,36 @@
+🚀 Day 3 Deep Learning Journey— Understanding Perceptrons and Their Limitations 🎯
+Today I dived deep into the Perceptron, the foundational building block of neural networks, and explored why it led to the development of Multilayer Perceptrons (MLPs).
+🧠 Key concepts I learned:
+🔹 What is a Perceptron?
+ A perceptron is a simple algorithmic unit that mimics a single neuron. It consists of:
+ • Inputs (x1, x2, … xn)
+ • Weights (w1, w2, … wn)
+ • Bias (b)
+ • Summation function → sums the weighted inputs + bias
+ • Activation function → transforms the summed input into an output (range could be 0–1 or -1–1)
+The activation function can be step, sigmoid, ReLU, tanh, etc., depending on the type of problem.
+🔹 Example:
+ If we have a dataset of students with IQ, CGPA, and Placement:
+x1 = IQ
+x2 = CGPA
+z = w1·x1 + w2·x2 + b
+Output = activation(z)
+During training, the perceptron learns the optimal weights (w1, w2) and bias (b) to predict placement. For instance, if w2 = 4 and w1 = 2, it means CGPA has a stronger impact on placement prediction than IQ.
+🔹 Neuron vs Perceptron
+Neuron: Complex, biological structure with dendrites receiving inputs and axons giving outputs; neuroplasticity allows connections to strengthen or weaken.
+Perceptron: Simple computational model with input, weights, bias, summation, and activation.
+🔹 Geometric Intuition
+ The perceptron’s output can be visualized as a linear decision boundary:
+z = w1·x1 + w2·x2 + b (similar to line equation z = ax + by + c)
+If z ≥ 0 → Placement = 1 (upper region of line)
+If z < 0 → Placement = 0 (lower region of line)
+🔹 Limitation of Perceptron
+ It can only classify linearly separable data. Non-linear patterns require Multilayer Perceptrons (MLPs).
+🔹 Practical Implementation
+ I applied a perceptron in Google Colab:
+Imported libraries and dataset (students’ CGPA, resume score, placement)
+Used Perceptron from sklearn.linear_model
+Visualized results using mlxtend.plotting
+💡 Insight:
+ Today’s hands-on exercise helped me connect theory with implementation, understand the importance of weights, and appreciate why MLPs became necessary for non-linear problems.
+hashtag#Day3 hashtag#Perceptron hashtag#DeepLearning hashtag#NeuralNetworks hashtag#MLBasics hashtag#MachineLearning hashtag#AI hashtag#Sklearn hashtag#DataScience hashtag#MLJourney hashtag#HandsOnLearning
