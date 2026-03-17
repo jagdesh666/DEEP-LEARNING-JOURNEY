@@ -1,0 +1,23 @@
+🚀 Day 2 of Deep Learning Journey : — Types of Neural Networks and History of Deep Learning 🎯
+Today I studied the major types of neural networks used in deep learning and also explored the history and evolution of deep learning. Understanding how these models developed over time helps in appreciating why deep learning has become such a powerful field today.
+🧠 Key concepts I learned today:
+🔹 Overview of Multi-Layer Neural Networks
+ I studied how neural networks are built using multiple layers of neurons where information flows from the input layer through hidden layers to the output layer. These deep layered structures allow models to learn complex patterns from data.
+🔹 Types of Neural Networks
+ I reviewed the main architectures used in deep learning:
+ • Multi-Layer Neural Networks (ANN) – basic neural networks used for many prediction tasks.
+ • Convolutional Neural Networks (CNN) – mainly used for image processing and computer vision tasks.
+ • Recurrent Neural Networks (RNN) – designed for sequence data such as text, speech, and time-series.
+ • Autoencoders – used for data compression, feature learning, and anomaly detection.
+ • Generative Adversarial Networks (GANs) – used to generate new data such as images, text, or audio.
+🔹 History of Deep Learning
+ I also explored the early beginnings of neural networks, starting with Perceptrons, which were among the first models inspired by biological neurons. Over time, with improvements in algorithms, data availability, and computational power, deep learning experienced a major breakthrough and became widely adopted.
+🔹 Applications of Deep Learning
+ Deep learning is now used in many advanced technologies, such as:
+ • Self-driving cars
+ • Voice assistants
+ • Image caption generation
+ • Computer vision systems
+ • Natural language processing applications
+✨ Learning about the history and different architectures of neural networks gave me a clearer understanding of how deep learning evolved and why different models are used for different types of problems.
+hashtag#Day58 hashtag#DeepLearning hashtag#NeuralNetworks hashtag#ANN hashtag#CNN hashtag#RNN hashtag#GAN hashtag#Autoencoder hashtag#AI hashtag#MachineLearning hashtag#DataScience hashtag#LearningJourney
