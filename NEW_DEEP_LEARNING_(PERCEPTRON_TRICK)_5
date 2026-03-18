@@ -1,0 +1,41 @@
+🚀 Day 5 of Deep Learning Journey: — Training the Perceptron & Understanding the Perceptron Trick 🎯
+Today I focused on one of the most important parts of neural networks — how the perceptron actually learns, i.e., how it finds the correct values of weights (w) and bias (b).
+🧠 Key concepts I learned:
+🔹 How Perceptron Training Works
+ The perceptron starts with random weights and bias, which means the initial decision boundary (line) is also random. From there, it improves step by step by correcting mistakes.
+🔹 Perceptron Trick (Core Idea)
+ Whenever the model makes a wrong prediction:
+ • It identifies the misclassified data point
+ • Then it adjusts the weights and bias in a way that moves the decision boundary closer to correct classification
+This process keeps repeating for many iterations (called epochs, e.g., 1000 times), gradually improving the model.
+🔹 Geometric Intuition
+ The decision boundary is a line:
+ w1·x1 + w2·x2 + b = 0
+If a point is on the wrong side of the line:
+ • The algorithm shifts the line by updating coefficients (w1, w2, b)
+ • This shift ensures the wrongly classified point moves to the correct side
+🔹 Update Rule (Most Important Insight)
+ The perceptron updates weights using:
+ w = w + learning_rate × (y − ŷ) × x
+Where:
+ • y = actual value
+ • ŷ = predicted value
+ • x = input features
+ • learning_rate = controls how big the update step is
+🔹 Learning Rate
+ The learning rate decides how fast the model learns:
+ • Small value → slow but stable learning
+ • Large value → faster but can overshoot
+🔹 Algorithm Understanding (from code)
+ • Insert bias term into input
+ • Initialize weights to zero
+ • For multiple epochs:
+ - Pick a random data point
+ - Predict output
+ - Update weights if prediction is wrong
+This iterative correction process is what allows the perceptron to learn the optimal decision boundary.
+🔹 Visualization Insight
+ By running this process over many epochs (like 1000), you can actually see the decision boundary adjusting step by step until it separates the classes correctly.
+💡 Key Takeaway:
+ Today made it clear that learning in neural networks is nothing but repeated error correction. The perceptron doesn’t “know” the answer initially — it learns by continuously adjusting itself based on mistakes.
+hashtag#Day5 hashtag#Perceptron hashtag#DeepLearning hashtag#MachineLearning hashtag#NeuralNetworks hashtag#LearningJourney hashtag#AI hashtag#DataScience hashtag#MLBasics hashtag#Optimization
