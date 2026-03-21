@@ -1,0 +1,58 @@
+🚀 Day 8 — Multilayer Perceptron (MLP) / Artificial Neural Network (ANN) 🎯
+
+Today I started learning Multilayer Perceptrons (MLP) in depth, which are also known as Artificial Neural Networks (ANN). This is an important step because MLPs overcome the limitations of a single perceptron and can handle non-linear problems.
+
+🧠 Key concepts I learned:
+
+🔹 Understanding the Architecture
+I studied how to analyze a neural network structure and calculate its weights, biases, and total trainable parameters.
+
+Example architecture:
+• Input layer → 4 neurons
+• Hidden Layer 1 → 3 neurons
+• Hidden Layer 2 → 2 neurons
+• Output Layer → 1 neuron
+
+🔹 Calculating Weights and Biases
+• Input → Hidden Layer 1
+ Weights = 4 × 3 = 12
+ Biases = 3
+
+• Hidden Layer 1 → Hidden Layer 2
+ Weights = 3 × 2 = 6
+ Biases = 2
+
+• Hidden Layer 2 → Output Layer
+ Weights = 2 × 1 = 2
+ Biases = 1
+
+🔹 Total Trainable Parameters
+Total = Weights + Biases
+= 12 + 3 + 6 + 2 + 2 + 1 = 26 trainable parameters
+
+🔹 Notation (Very Important for Backpropagation)
+To understand deep learning mathematically, I learned how to represent different components:
+
+• Bias (bᵢⱼ)
+ b → bias
+ i → layer number
+ j → neuron number in that layer
+ Example: b₁₁, b₁₂, b₁₃ (hidden layer 1), b₂₁, b₂₂ (hidden layer 2), b₃₁ (output layer)
+
+• Output (oᵢⱼ)
+ o → output
+ i → layer number
+ j → neuron number
+ Represents the output of each neuron in each layer
+
+• Weights (wᵏᵢⱼ)
+ w → weight
+ k → layer to which the connection is going
+ i → neuron number in previous layer
+ j → neuron number in next layer
+
+🔹 Why This Matters
+This notation and understanding of parameters is essential for learning Backpropagation, which is the core algorithm used to train deep neural networks.
+
+💡 Key Takeaway:
+Today I learned how to break down a neural network into its mathematical components. Understanding weights, biases, and their notation is the foundation for mastering how neural networks actually learn.
