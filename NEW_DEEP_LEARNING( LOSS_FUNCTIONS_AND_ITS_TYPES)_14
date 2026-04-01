@@ -1,0 +1,106 @@
+Deep Dive into Loss Functions in Deep Learning 🎯
+
+Today I focused on one of the most critical concepts in Deep Learning — Loss Functions. Understanding loss functions is essential because they guide how a model learns and improves during training 🧠
+
+🔹 What is a Loss Function?
+A loss function is a mathematical function that measures how well a model is performing on a dataset.
+
+• High loss → Model is performing poorly ❌
+• Low loss → Model is performing well ✅
+
+It depends on model parameters (weights & biases), and the goal is to minimize this loss using optimization techniques like Gradient Descent 📉
+
+🔹 Why Loss Function is Important?
+As Peter Drucker said: “You can’t improve what you can’t measure.”
+
+Loss function acts as a feedback system:
+• Model makes prediction
+• Loss is calculated
+• Weights & biases are updated
+• Process repeats until loss is minimized 🔄
+
+🔹 Loss vs Cost Function
+• Loss Function → Error for a single data point
+• Cost Function → Average loss over the entire dataset
+
+Example:
+• Loss = (yi − ŷi)²
+• Cost = (1/n) Σ(yi − ŷi)²
+
+🔹 How it Works in Neural Networks
+• Input data passes through the network (forward propagation)
+• Model predicts output
+• Loss is calculated (e.g., MSE)
+• Backpropagation adjusts weights & biases
+• Process repeats for all data points
+
+🔹 Loss Functions I Learned:
+
+📊 Regression Loss Functions:
+
+1️⃣ Mean Squared Error (MSE)
+Formula: (yi − ŷi)²
+✔ Advantages:
+• Differentiable
+• Easy to optimize
+• Single global minimum
+
+❌ Disadvantages:
+• Sensitive to outliers
+• Error is squared (unit changes)
+
+👉 Best when data has no major outliers
+
+2️⃣ Mean Absolute Error (MAE)
+Formula: |yi − ŷi|
+✔ Advantages:
+• Robust to outliers
+• Same unit as target
+
+❌ Disadvantages:
+• Not differentiable at some points
+
+👉 Best when data contains outliers
+
+3️⃣ Huber Loss
+• Combines MSE and MAE
+• Handles datasets with some outliers effectively
+
+👉 Best when dataset is partially noisy
+
+🔹 Classification Loss Functions:
+
+4️⃣ Binary Cross Entropy (Log Loss)
+Formula:
+−y log(ŷ) − (1 − y) log(1 − ŷ)
+
+✔ Used for binary classification
+✔ Output layer uses Sigmoid activation
+
+❌ Slightly harder to interpret
+
+5️⃣ Categorical Cross Entropy
+Formula:
+−Σ yi log(ŷi)
+
+✔ Used for multi-class classification
+✔ Requires One-Hot Encoding
+✔ Output layer uses Softmax activation
+
+🔁 Sparse Categorical Cross Entropy
+• No need for one-hot encoding
+• Uses integer labels
+• Faster for large number of classes
+
+🔹 Other Loss Functions (Overview):
+• KL Divergence (Autoencoders)
+• GAN Loss (Generator & Discriminator)
+• Triplet Loss (Embeddings)
+
+💡 Key Takeaways:
+• Loss functions are the core driver of learning in deep learning
+• Choosing the right loss function depends on the problem type (regression vs classification)
+• MSE vs MAE vs Huber → depends on outliers
+• Cross Entropy → essential for classification problems
+
+This understanding will make it much easier to deeply grasp Backpropagation and Optimization next 🔄
