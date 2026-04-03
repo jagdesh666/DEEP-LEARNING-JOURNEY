@@ -1,0 +1,39 @@
+Backpropagation Part 1 🔄
+Today I started learning Backpropagation, one of the fundamental algorithms to train Neural Networks 🧠
+🔹 What is Backpropagation?
+ Backpropagation is an algorithm to train neural networks by adjusting the weights and biases of neurons to minimize the loss function.
+Prerequisites:
+ • Forward Propagation
+ • Gradient Descent
+🔹 Example Setup:
+Dataset: Students with columns → IQ, CGPA, Package
+Neural Network Architecture:
+ • Input layer → 2 neurons (IQ, CGPA)
+ • Hidden layer → 2 neurons
+ • Output layer → 1 neuron (Package)
+ • Hidden & Output Activation → Linear
+Notation for weights & biases:
+ • Input → Hidden: (w1)11,(w1)12,(w1)21,(w1)22(w^1)_{11}, (w^1)_{12}, (w^1)_{21}, (w^1)_{22}(w1)11​,(w1)12​,(w1)21​,(w1)22​
+ • Hidden biases: b11,b12b_{11}, b_{12}b11​,b12​
+ • Hidden → Output: (w2)11,(w2)21(w^2)_{11}, (w^2)_{21}(w2)11​,(w2)21​
+ • Output bias: b21b_{21}b21​
+ • Output: y^\hat{y}y^​
+🔹 Backpropagation Steps:
+1️⃣ Initialize weights & biases randomly
+2️⃣ Select a data point from the dataset and pass it through the network → Forward Propagation
+3️⃣ Predict output y^\hat{y}y^​ and compare it with the actual value → Compute error
+4️⃣ Choose Loss Function → Here we use MSE
+L=(y^−y)2L = (\hat{y} - y)^2L=(y^​−y)25️⃣ Compute Gradients:
+ • Output depends on hidden layer outputs and weights:
+y^=(w2)11⋅o11+(w2)21⋅o12+b21\hat{y} = (w^2)_{11} \cdot o_{11} + (w^2)_{21} \cdot o_{12} + b_{21}y^​=(w2)11​⋅o11​+(w2)21​⋅o12​+b21​• Each hidden output o11,o12o_{11}, o_{12}o11​,o12​ depends on input, weights, and biases
+6️⃣ Update weights & biases using Gradient Descent:
+Wnew=Wold−α∂L∂WW_{\text{new}} = W_{\text{old}} - \alpha \frac{\partial L}{\partial W} Wnew​=Wold​−α∂W∂L​Bnew=Bold−α∂L∂BB_{\text{new}} = B_{\text{old}} - \alpha \frac{\partial L}{\partial B} Bnew​=Bold​−α∂B∂L​• α\alphaα → learning rate
+ • ∂L∂W\frac{\partial L}{\partial W}∂W∂L​ → derivative of loss w.r.t weight
+7️⃣ Repeat for each data point and iterate until loss is minimized 🔄
+🔹 Key Insight:
+ • Backpropagation propagates the error backward through the network
+ • Adjusts all weights and biases to reduce loss
+ • Requires calculating derivatives of loss w.r.t all weights and biases → In our example, 9 derivatives were calculated for the given network
+💡 Takeaway:
+ Backpropagation + Gradient Descent = Core of Neural Network learning.
+ It’s how the network learns from errors and improves predictions iteratively ✅
